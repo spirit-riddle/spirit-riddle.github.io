@@ -1,0 +1,20 @@
+
+{
+  "name": "github-entrance-page",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A simple Gatsby project for Spirit Riddle's GitHub main page.",
+  "main": "index.js",
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build --prefix-paths",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+  },
+  "dependencies": {
+    "gatsby": "^5.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "gh-pages": "^5.0.0"
+  }
+}
+        
