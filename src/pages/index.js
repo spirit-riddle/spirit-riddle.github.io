@@ -1,32 +1,108 @@
-
 import React from "react";
+import "./styles.css"
 
 const IndexPage = () => (
-  <main style={{ padding: "2rem", fontFamily: "Arial, sans-serif" }}>
-    <h1>Welcome to Spirit Riddle</h1>
-    <p>This is the main entry to our project documentation and resources.</p>
-    <section style={{ marginTop: "1rem" }}>
-      <h2>Documentation Links</h2>
-      <ul style={{ listStyle: "none", padding: 0 }}>
-        <li>
-          <a href="https://spirit-riddle.github.io/mkdocs-software-printer/" target="_blank" rel="noopener noreferrer">
+  <main style={{
+    padding: "3rem 2rem",
+    fontFamily: "'Courier New', Courier, monospace",
+    backgroundColor: "#f4f4f4",
+    color: "#333",
+    maxWidth: "900px",
+    margin: "0 auto",
+    borderRadius: "8px",
+  }}>
+    <header style={{ marginBottom: "2rem" }}>
+      <h1 style={{ fontSize: "2.5rem", margin: "0", fontWeight: "normal" }}>
+        Welcome to Spirit Riddle
+      </h1>
+      <p style={{
+        fontSize: "1.1rem",
+        color: "#555",
+        lineHeight: "1.6",
+        fontStyle: "italic",
+      }}>
+        The home of the <strong>Maverick Spirit</strong> suite of tools and products, designed for developers and creators. New products are being added as part of a growing collection that will one day form the complete Maverick Spirit toolkit.
+      </p>
+    </header>
+
+    <section>
+      <h2 style={{
+        fontSize: "2rem",
+        color: "#111",
+        marginBottom: "1rem",
+        fontWeight: "bold",
+      }}>
+        Current Projects
+      </h2>
+      <h3>MkDocs Software Printer</h3>
+      <p style={{ fontSize: "1rem", lineHeight: "1.8", marginBottom: "1.5rem" }}>
+        This project is a key part of the Maverick Spirit toolset, designed to streamline the development process by generating software projects directly from documentation. With this tool, you never have to start from scratch when developing. It empowers you to create modular systems quickly, transforming well-structured documentation into actionable, reusable code components.
+      </p>
+
+      <ul style={{
+        listStyleType: "none",
+        padding: 0,
+        margin: 0,
+        fontSize: "1rem",
+        lineHeight: "2",
+      }}>
+        <li style={{ marginBottom: "1rem" }}>
+          <a
+            href="https://spirit-riddle.github.io/mkdocs-software-printer/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              textDecoration: "none",
+              color: "#007acc",
+              fontWeight: "bold",
+            }}
+          >
             MkDocs Software Printer - User Guide
           </a>
         </li>
-        <li>
-          <a href="https://spirit-riddle.github.io/mkdocs-software-printer/system/" target="_blank" rel="noopener noreferrer">
+        <li style={{ marginBottom: "1rem" }}>
+          <a
+            href="https://spirit-riddle.github.io/mkdocs-software-printer/system/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              textDecoration: "none",
+              color: "#007acc",
+              fontWeight: "bold",
+            }}
+          >
             MkDocs Software Printer - System Manual
           </a>
         </li>
-        <li>
-          <a href="https://github.com/spirit-riddle/mkdocs-software-printer" target="_blank" rel="noopener noreferrer">
+        <li style={{ marginBottom: "1rem" }}>
+          <a
+            href="https://github.com/spirit-riddle/mkdocs-software-printer"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              textDecoration: "none",
+              color: "#007acc",
+              fontWeight: "bold",
+            }}
+          >
             Source Code on GitHub
           </a>
         </li>
       </ul>
     </section>
+
+    <footer style={{
+      marginTop: "3rem",
+      textAlign: "center",
+      fontSize: "0.9rem",
+      color: "#888",
+    }}>
+      <p>© {new Date().getFullYear()} Spirit Riddle. All rights reserved.</p>
+      <p style={{ fontSize: "0.8rem", color: "#aaa" }}>
+        This page is under construction as part of the ongoing development of the <strong>Maverick Spirit</strong> toolkit. Stay tuned for updates.
+      </p>
+    </footer>
   </main>
 );
 
 export default IndexPage;
-                

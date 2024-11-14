@@ -1,8 +1,34 @@
-# Environment:
-node_modules
-dist
-.env
+# Gatsby files
+.cache/
+public/
 
-# Project:
-.maverick-spirit
-zip-folder
+# Dependency directories
+node_modules/
+
+# Build directories
+dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env
+.env.* 
+
+# IDE and editor folders
+.idea/
+.vscode/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Miscellaneous files
+*.log
+*.tgz
+*.bak
+
+# Coverage directory used by tools like istanbul
+coverage/
