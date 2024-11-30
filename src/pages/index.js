@@ -89,6 +89,24 @@ const IndexPage = () => (
           </a>
         </li>
       </ul>
+
+      <h2 style={{ fontSize: "2rem", color: "#111", marginBottom: "1rem", fontWeight: "bold" }}>
+        Blog
+      </h2>
+      <ul style={{ listStyleType: "none", padding: 0, margin: 0, fontSize: "1rem", lineHeight: "1.8" }}>
+        <li style={{ marginBottom: "1rem" }}>
+          <a
+            href="/blog/universal-service-adapter-model-lov/"
+            style={{ textDecoration: "none", color: "#007acc", fontWeight: "bold" }}
+          >
+            Universal Service Adapter (LOV)
+          </a>
+          <p style={{ margin: 0, fontSize: "0.9rem", color: "#555" }}>
+            Discover how LOV simplifies complex integrations and empowers users.
+          </p>
+        </li>
+      </ul>
+
     </section>
 
     <footer style={{
