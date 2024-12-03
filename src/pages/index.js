@@ -145,7 +145,7 @@ const IndexPage = () => (
       >
         <li style={{ marginBottom: "1rem" }}>
           <a
-            href="/blog/algorithmic-cognitive-enhancer/"
+            href="/blog/memory-algorithmic-cognitive-enhancer/"
             style={{
               textDecoration: "none",
               color: "#007acc",
