@@ -1,5 +1,7 @@
 import React from "react";
 import "../styles.css";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 const UniversalServiceAdapterModelLOV = () => (
   <main
@@ -13,21 +15,12 @@ const UniversalServiceAdapterModelLOV = () => (
       borderRadius: "8px",
     }}
   >
-    <header style={{ marginBottom: "2rem" }}>
-      <h1 style={{ fontSize: "2.5rem", margin: "0", fontWeight: "normal" }}>
-        Universal Service Adapter Model: LOV
-      </h1>
-      <p
-        style={{
-          fontSize: "1.1rem",
-          color: "#555",
-          lineHeight: "1.6",
-          fontStyle: "italic",
-        }}
-      >
-          This post explores how LOV simplifies complex systems by connecting actions and services through a universal model. Whether you're a developer, a business owner, or just curious about the future of AI-driven tools, LOV is designed to make integration seamless and accessible.
-      </p>
-    </header>
+
+    <Header
+      title="Universal Service Adapter Model: LOV"
+      subheader="This post explores how LOV simplifies complex systems by connecting actions and services through a universal model. Whether you're a developer, a business owner, or just curious about the future of AI-driven tools, LOV is designed to make integration seamless and accessible."
+      date="November 29, 2024"
+    />
 
     <section>
       <h2
@@ -451,29 +444,8 @@ const UniversalServiceAdapterModelLOV = () => (
       </p>
 
     </section>
-    <footer
-      style={{
-        marginTop: "3rem",
-        textAlign: "center",
-        fontSize: "0.9rem",
-        color: "#888",
-      }}
-    >
-      <p>© {new Date().getFullYear()} Spirit Riddle. All rights reserved.</p>
-      <p style={{ fontSize: "0.8rem", color: "#aaa" }}>
-        Explore more about Spirit Riddle on our{" "}
-        <a
-          href="/"
-          style={{
-            textDecoration: "none",
-            color: "#555",
-            fontWeight: "bold",
-          }}
-        >
-          Homepage
-        </a>.
-      </p>
-    </footer>
+
+    <Footer />
   </main>
 );
 
