@@ -37,13 +37,11 @@ const IndexPage = () => (
           fontStyle: "italic",
         }}
       >
-        The home of the <strong>Maverick Spirit</strong> suite of tools and
-        products, designed for developers and creators. New products are being
-        added as part of a growing collection that will one day form the
-        complete Maverick Spirit toolkit.
+        A playground for developers and creators on a mission. Dive into tools, projects, and training that bridge software development with advanced mathematics—one bold step at a time.
       </p>
     </header>
 
+    {/* Training Section */}
     <section>
       <h2
         style={{
@@ -53,7 +51,55 @@ const IndexPage = () => (
           fontWeight: "bold",
         }}
       >
-        Current Projects
+        Training
+      </h2>
+      <p
+        style={{
+          fontSize: "1rem",
+          lineHeight: "1.8",
+          marginBottom: "1.5rem",
+        }}
+      >
+        Explore our training programs designed to help software developers transition to advanced mathematics. Start with foundational terminology and build your expertise step by step.
+      </p>
+      <ul
+        style={{
+          listStyleType: "none",
+          padding: 0,
+          margin: 0,
+          fontSize: "1rem",
+          lineHeight: "2",
+        }}
+      >
+        <li style={{ marginBottom: "1rem" }}>
+          <a
+            href="/training/google-web-search-engineer-math/"
+            style={{
+              textDecoration: "none",
+              color: "#007acc",
+              fontWeight: "bold",
+            }}
+          >
+            Google Web Search Engineer Math
+          </a>
+          <p style={{ margin: 0, fontSize: "0.9rem", color: "#555" }}>
+            Learn the terminology and concepts powering Google’s search engine technology.
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    {/* Projects Section */}
+    <section>
+      <h2
+        style={{
+          fontSize: "2rem",
+          color: "#111",
+          marginBottom: "1rem",
+          fontWeight: "bold",
+        }}
+      >
+        Projects
       </h2>
       <h3>MkDocs Software Printer</h3>
       <p
@@ -63,12 +109,11 @@ const IndexPage = () => (
           marginBottom: "1.5rem",
         }}
       >
-        This project is a key part of the Maverick Spirit toolset, designed to
+        This project is a powerful tool for developers, enabling you to
         streamline the development process by generating software projects
-        directly from documentation. With this tool, you never have to start
-        from scratch when developing. It empowers you to create modular systems
-        quickly, transforming well-structured documentation into actionable,
-        reusable code components.
+        directly from documentation. It transforms well-structured documentation
+        into actionable, reusable code components, saving time and making modular
+        system creation seamless.
       </p>
 
       <ul
@@ -123,65 +168,66 @@ const IndexPage = () => (
           </a>
         </li>
       </ul>
-
-      <h2
-        style={{
-          fontSize: "2rem",
-          color: "#111",
-          marginBottom: "1rem",
-          fontWeight: "bold",
-        }}
-      >
-        Blog
-      </h2>
-      <ul
-        style={{
-          listStyleType: "none",
-          padding: 0,
-          margin: 0,
-          fontSize: "1rem",
-          lineHeight: "1.8",
-        }}
-      >
-        <li style={{ marginBottom: "1rem" }}>
-          <a
-            href="/blog/memory-algorithmic-cognitive-enhancer/"
-            style={{
-              textDecoration: "none",
-              color: "#007acc",
-              fontWeight: "bold",
-            }}
-          >
-            Algorithmic Cognitive Enhancer
-          </a>
-          <p style={{ margin: 0, fontSize: "0.9rem", color: "#555" }}>
-            Explore how rolling your voice through musical notes can improve
-            memory and focus.
-          </p>
-          <p style={{ margin: 0, fontSize: "0.8rem", color: "#999" }}>
-            Published: December 2, 2024
-          </p>
-        </li>
-        <li style={{ marginBottom: "1rem" }}>
-          <a
-            href="/blog/universal-service-adapter-model-lov/"
-            style={{
-              textDecoration: "none",
-              color: "#007acc",
-              fontWeight: "bold",
-            }}
-          >
-            Universal Service Adapter (LOV)
-          </a>
-          <p style={{ margin: 0, fontSize: "0.9rem", color: "#555" }}>
-            Discover how LOV simplifies complex integrations and empowers users.
-          </p>
-          <p style={{ margin: 0, fontSize: "0.8rem", color: "#999" }}>
-            Published: November 29, 2024
-          </p>
-        </li>
-      </ul>
     </section>
+
+    {/* Blog Section */}
+    <h2
+      style={{
+        fontSize: "2rem",
+        color: "#111",
+        marginBottom: "1rem",
+        fontWeight: "bold",
+      }}
+    >
+      Blog
+    </h2>
+    <ul
+      style={{
+        listStyleType: "none",
+        padding: 0,
+        margin: 0,
+        fontSize: "1rem",
+        lineHeight: "1.8",
+      }}
+    >
+      <li style={{ marginBottom: "1rem" }}>
+        <a
+          href="/blog/memory-algorithmic-cognitive-enhancer/"
+          style={{
+            textDecoration: "none",
+            color: "#007acc",
+            fontWeight: "bold",
+          }}
+        >
+          Algorithmic Cognitive Enhancer
+        </a>
+        <p style={{ margin: 0, fontSize: "0.9rem", color: "#555" }}>
+          Explore how rolling your voice through musical notes can improve
+          memory and focus.
+        </p>
+        <p style={{ margin: 0, fontSize: "0.8rem", color: "#999" }}>
+          Published: December 2, 2024
+        </p>
+      </li>
+      <li style={{ marginBottom: "1rem" }}>
+        <a
+          href="/blog/universal-service-adapter-model-lov/"
+          style={{
+            textDecoration: "none",
+            color: "#007acc",
+            fontWeight: "bold",
+          }}
+        >
+          Universal Service Adapter (LOV)
+        </a>
+        <p style={{ margin: 0, fontSize: "0.9rem", color: "#555" }}>
+          Discover how LOV simplifies complex integrations and empowers users.
+        </p>
+        <p style={{ margin: 0, fontSize: "0.8rem", color: "#999" }}>
+          Published: November 29, 2024
+        </p>
+      </li>
+    </ul>
 
     <footer
       style={{
@@ -198,8 +244,8 @@ const IndexPage = () => (
           color: "#aaa",
         }}
       >
-        This page is under construction as part of the ongoing development of
-        the <strong>Maverick Spirit</strong> toolkit. Stay tuned for updates.
+        This site is under development to provide tools and training for developers
+        transitioning to advanced mathematics and beyond.
       </p>
     </footer>
   </main>

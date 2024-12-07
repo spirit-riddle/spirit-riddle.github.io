@@ -29,16 +29,18 @@ const Header = ({ title, subheader, date }) => (
     >
       {subheader}
     </p>
-    <p
-      style={{
-        fontSize: "0.9rem",
-        color: "#777",
-        marginTop: "0.5rem",
-        fontStyle: "italic",
-      }}
-    >
-      Published on: {date}
-    </p>
+    {date && (
+      <p
+        style={{
+          fontSize: "0.9rem",
+          color: "#777",
+          marginTop: "0.5rem",
+          fontStyle: "italic",
+        }}
+      >
+        Published on: {date}
+      </p>
+    )}
   </header>
 );
 

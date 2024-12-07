@@ -17,6 +17,14 @@ module.exports = {
         },
       },
     },
-    // other plugins
+    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `training`,
+        path: `${__dirname}/src/pages/training`,
+        ignore: [`**/.*`], // Ignore files starting with a dot
+      },
+    },
   ],
 };
