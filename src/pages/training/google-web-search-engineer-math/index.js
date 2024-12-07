@@ -149,6 +149,59 @@ const MathList = () => (
       </ul>
     </section>
 
+    {/* Memorize Algorithms Section */}
+    <section>
+      <h2
+        style={{
+          fontSize: "2rem",
+          color: "#111",
+          marginBottom: "1rem",
+          fontWeight: "bold",
+        }}
+      >
+        Memorize Algorithms
+      </h2>
+      <p
+        style={{
+          fontSize: "1.1rem",
+          lineHeight: "1.8",
+          color: "#555",
+          marginBottom: "1rem",
+        }}
+      >
+        Build your understanding of algorithms across key mathematical fields. Each link provides a categorized list of algorithms with descriptions for easy reference and memorization.
+      </p>
+      <ul
+        style={{
+          listStyleType: "none",
+          padding: 0,
+          fontSize: "1.1rem",
+          lineHeight: "2",
+        }}
+      >
+        <li>
+          <a href="/training/google-web-search-engineer-math/Graph_Theory_Algorithms/">
+            Graph Theory Algorithms
+          </a>
+        </li>
+        <li>
+          <a href="/training/google-web-search-engineer-math/Algorithms_and_Models_Algorithms/">
+            Algorithms and Models
+          </a>
+        </li>
+        <li>
+          <a href="/training/google-web-search-engineer-math/Linear_Algebra_Algorithms/">
+            Linear Algebra Algorithms
+          </a>
+        </li>
+        <li>
+          <a href="/training/google-web-search-engineer-math/Probability_and_Statistics_Algorithms/">
+            Probability and Statistics Algorithms
+          </a>
+        </li>
+      </ul>
+    </section>
+
     {/* Math Roadmap Section */}
     <section>
       <h3
@@ -179,9 +232,9 @@ const MathList = () => (
         }}
       >
         <li>Graph Theory: Graph traversal, PageRank, and shortest paths.</li>
+        <li>Algorithms: Text processing, clustering, and graph-based computations.</li>
         <li>Linear Algebra: Vectors, matrices, and eigenvalues.</li>
         <li>Probability and Statistics: Distributions, Bayes' theorem, and inference.</li>
-        <li>Algorithms: Text processing, clustering, and graph-based computations.</li>
       </ul>
     </section>
 
@@ -232,7 +285,7 @@ const MathList = () => (
         <strong>In Progress:</strong> Content and insights are continuously being developed. Stay tuned for updates!
       </p>
     </section>
-    
+
     <footer className="section-footer">
       <p>
         Ready to dive in? Watch the video, take notes, and share your insights. This is our collective journey into the world of graph theory and beyond!
