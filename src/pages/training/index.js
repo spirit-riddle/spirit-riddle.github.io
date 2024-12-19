@@ -37,7 +37,7 @@ const TrainingIndex = () => (
           fontStyle: "italic",
         }}
       >
-        A curated set of courses for transitioning from software development 
+        A curated set of courses for transitioning from software development
         to mathematical mastery, annotated for self-learners and small groups.
       </p>
     </header>
@@ -64,21 +64,17 @@ const TrainingIndex = () => (
       >
         <li style={{ marginBottom: "1rem" }}>
           <a
-            href="/training/google-web-search-engineer-math/"
+            href="/training/lov-math-foundations/"
             style={{
               textDecoration: "none",
               color: "#007acc",
               fontWeight: "bold",
             }}
           >
-            Google Web Search Engineer Math
+            LOV Math Foundations
           </a>
           <p style={{ margin: 0, fontSize: "0.9rem", color: "#555" }}>
-            Learn the math behind Google’s search engine algorithms, from graph 
-            theory to linear algebra. This course focuses on bridging software 
-            development skills with advanced mathematical concepts. Discover how 
-            to translate coding knowledge into a foundation for solving complex 
-            mathematical problems.
+            Master the essential math concepts behind modern systems, from graph theory to linear algebra. This foundational course bridges software development skills with advanced mathematical principles, providing the tools to tackle complex problem-solving with confidence.
           </p>
         </li>
       </ul>
@@ -99,7 +95,7 @@ const TrainingIndex = () => (
           color: "#aaa",
         }}
       >
-        This page is part of the <strong>Maverick Spirit</strong> toolkit. 
+        This page is part of the <strong>Maverick Spirit</strong> toolkit.
         Stay tuned for updates as we add more training resources.
       </p>
     </footer>

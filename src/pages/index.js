@@ -37,7 +37,9 @@ const IndexPage = () => (
           fontStyle: "italic",
         }}
       >
-        A playground for developers and creators on a mission. Dive into tools, projects, and training that bridge software development with advanced mathematics—one bold step at a time.
+        <small><em>Innovation for a Better Tomorrow</em></small>
+        <br />
+        Spirit Riddle blends software development, advanced mathematics, and energy efficiency into a unified platform for growth. Join the journey from foundational learning to enterprise solutions.
       </p>
     </header>
 
@@ -53,15 +55,6 @@ const IndexPage = () => (
       >
         Training
       </h2>
-      <p
-        style={{
-          fontSize: "1rem",
-          lineHeight: "1.8",
-          marginBottom: "1.5rem",
-        }}
-      >
-        Explore our training programs designed to help software developers transition to advanced mathematics. Start with foundational terminology and build your expertise step by step.
-      </p>
       <ul
         style={{
           listStyleType: "none",
@@ -73,24 +66,24 @@ const IndexPage = () => (
       >
         <li style={{ marginBottom: "1rem" }}>
           <a
-            href="/training/google-web-search-engineer-math/"
+            href="/training/lov-math-foundations/"
             style={{
               textDecoration: "none",
               color: "#007acc",
               fontWeight: "bold",
             }}
           >
-            Google Web Search Engineer Math
+            LOV Math Foundations
           </a>
           <p style={{ margin: 0, fontSize: "0.9rem", color: "#555" }}>
-            Learn the terminology and concepts powering Google’s search engine technology.
+            Master the essential math concepts behind modern systems, from graph theory to linear algebra. This foundational course bridges software development skills with advanced mathematical principles, providing the tools to tackle complex problem-solving with confidence.
           </p>
         </li>
       </ul>
     </section>
 
     {/* Projects Section */}
-    <section>
+    {/* <section>
       <h2
         style={{
           fontSize: "2rem",
@@ -168,7 +161,7 @@ const IndexPage = () => (
           </a>
         </li>
       </ul>
-    </section>
+    </section> */}
 
     {/* Blog Section */}
     <h2
@@ -190,6 +183,25 @@ const IndexPage = () => (
         lineHeight: "1.8",
       }}
     >
+      <li style={{ marginBottom: "1rem" }}>
+        <a
+          href="/blog/crafting-spirit-riddles-training-methodology/"
+          style={{
+            textDecoration: "none",
+            color: "#007acc",
+            fontWeight: "bold",
+          }}
+        >
+          Crafting Spirit Riddle's Training Methodology
+        </a>
+        <p style={{ margin: 0, fontSize: "0.9rem", color: "#555" }}>
+          Explore the methodology behind Spirit Riddle's standardized training courses, designed for consistency and clarity in learning.
+        </p>
+        <p style={{ margin: 0, fontSize: "0.8rem", color: "#999" }}>
+          Published: December 9, 2024
+        </p>
+      </li>
+
       <li style={{ marginBottom: "1rem" }}>
         <a
           href="/blog/memory-algorithmic-cognitive-enhancer/"
@@ -244,8 +256,7 @@ const IndexPage = () => (
           color: "#aaa",
         }}
       >
-        This site is under development to provide tools and training for developers
-        transitioning to advanced mathematics and beyond.
+        Exciting updates are on the way! This site is under active construction to bring you even more tools, training, and resources—be sure to check back soon for the latest improvements.
       </p>
     </footer>
   </main>

@@ -32,3 +32,6 @@ Thumbs.db
 
 # Coverage directory used by tools like istanbul
 coverage/
+
+# swap for hold generated stuff
+temp
