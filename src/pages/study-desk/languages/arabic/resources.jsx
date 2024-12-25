@@ -71,6 +71,30 @@ const StudyDeskPage = () => (
       ></iframe>
 
       <br />
+      <p>
+        Memorizing Arabic words is a powerful way to build your vocabulary and deepen your understanding of the language.
+        By focusing on patterns and repetition, you can quickly retain new words and their meanings. Using visual and audio
+        aids, like videos, helps reinforce your memory while providing context for how the words are used in sentences.
+        This playlist is designed to support your vocabulary building journey by introducing commonly used Arabic words
+        and phrases in everyday scenarios.
+      </p>
+      <p style={{ textAlign: "center", margin: "20px 0" }}>
+        <a
+          href="https://www.youtube.com/watch?v=AR6oclY-3jY&list=PLsr1ERsR7y1kOVVtHDU1RHm65IXk1mbWW&index=2"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            textDecoration: "none",
+            color: "#007acc",
+            fontWeight: "bold",
+            fontSize: "1rem",
+          }}
+        >
+          Watch Playlist
+        </a>
+      </p>
+
+      <br />
 
       {/* In Progress Section */}
       <section

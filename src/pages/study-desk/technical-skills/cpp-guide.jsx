@@ -87,6 +87,106 @@ const CppGuidePage = () => (
         </tr>
       </tbody>
     </table>
+
+    <br />
+    <h2>Memory Management in C++</h2>
+
+    <p>
+      Mastering memory management is essential for C++ development. Unlike JavaScript, where memory is automatically handled by a garbage collector, C++ gives developers direct control over memory allocation and deallocation. Here’s a comprehensive guide to understanding memory management in C++:
+    </p>
+
+    <h3>Key Concepts</h3>
+    <ul>
+      <li>
+        <strong>Stack vs. Heap Memory:</strong>
+        <ul>
+          <li>
+            <strong>Stack Memory:</strong> Automatically managed, fast, but
+            limited in size. Variables are destroyed when they go out of scope.
+          </li>
+          <li>
+            <strong>Heap Memory:</strong> Used for dynamic memory allocation.
+            Must be manually managed using <code>new</code> and{" "}
+            <code>delete</code>.
+          </li>
+        </ul>
+      </li>
+      <li>
+        <strong>Pointers:</strong> Variables that store memory addresses. They
+        enable dynamic memory manipulation but require careful handling to
+        avoid memory leaks.
+      </li>
+      <li>
+        <strong>References:</strong> Aliases for existing variables, safer than
+        pointers. References must always point to valid data.
+      </li>
+      <li>
+        <strong><code>new</code> and <code>delete</code>:</strong> Operators for
+        dynamic memory allocation and deallocation.
+      </li>
+      <li>
+        <strong>Memory Leaks:</strong> Failure to free allocated memory leads to
+        leaks, consuming resources over time.
+      </li>
+      <li>
+        <strong>Smart Pointers:</strong> Modern C++ features like{" "}
+        <code>std::unique_ptr</code> and <code>std::shared_ptr</code> that
+        automate memory management and prevent leaks.
+      </li>
+    </ul>
+
+    <h3>Examples</h3>
+    <pre style={{ backgroundColor: "#f4f4f4", padding: "1rem", borderRadius: "5px" }}>
+      {`// Stack Memory Example
+void example() {
+    int x = 10; // Allocated on the stack
+} // x is automatically destroyed here
+
+// Heap Memory Example
+void example() {
+    int* ptr = new int(10); // Allocated on the heap
+    delete ptr;            // Deallocated manually
+}`}
+    </pre>
+
+    <h3>Types to Memorize</h3>
+    <p>C++ is a statically typed language, so understanding and memorizing types is essential. Here's a categorized list:</p>
+    <ul>
+      <li>
+        <strong>Fundamental Types:</strong>
+        <ul>
+          <li><code>int</code>, <code>short</code>, <code>long</code>, <code>unsigned</code></li>
+          <li><code>float</code>, <code>double</code>, <code>long double</code></li>
+          <li><code>char</code>, <code>wchar_t</code>, <code>bool</code></li>
+        </ul>
+      </li>
+      <li>
+        <strong>Derived Types:</strong>
+        <ul>
+          <li><code>int*</code> (pointers)</li>
+          <li><code>int&</code> (references)</li>
+          <li>Arrays (e.g., <code>int arr[10];</code>)</li>
+          <li>Functions (e.g., <code>int add(int a, int b);</code>)</li>
+        </ul>
+      </li>
+      <li>
+        <strong>User-Defined Types:</strong> <code>struct</code>, <code>class</code>, <code>union</code>, <code>enum</code>
+      </li>
+      <li>
+        <strong>Type Modifiers:</strong> <code>const</code>, <code>volatile</code>, <code>mutable</code>
+      </li>
+      <li>
+        <strong>Specialized Types:</strong>
+        <ul>
+          <li><code>std::string</code></li>
+          <li><code>std::array</code>, <code>std::vector</code>, <code>std::tuple</code></li>
+        </ul>
+      </li>
+      <li>
+        <strong>Modern C++ Types:</strong> <code>auto</code>, <code>decltype</code>, <code>nullptr</code>, <code>std::shared_ptr</code>, <code>std::unique_ptr</code>
+      </li>
+    </ul>
+
   </StudyDeskLayout>
 );
 
