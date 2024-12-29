@@ -17,13 +17,25 @@ module.exports = {
         },
       },
     },
-    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `training`,
         path: `${__dirname}/src/pages/training`,
         ignore: [`**/.*`], // Ignore files starting with a dot
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-katex`,
+            options: {
+              strict: `ignore`, // Allows more flexible rendering
+            },
+          },
+        ],
       },
     },
   ],

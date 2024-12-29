@@ -187,6 +187,25 @@ const IndexPage = () => (
       >
         <li style={{ marginBottom: "1rem" }}>
           <a
+            href="/blog/how-to-become-successful-in-tech-and-life/"
+            style={{
+              textDecoration: "none",
+              color: "#007acc",
+              fontWeight: "bold",
+            }}
+          >
+            How to Become Successful in Tech and Life
+          </a>
+          <p style={{ margin: 0, fontSize: "0.9rem", color: "#555" }}>
+            Explore actionable insights and strategies for thriving in the tech industry and beyond. Learn how to start your journey toward success, no matter where you are today.
+          </p>
+          <p style={{ margin: 0, fontSize: "0.8rem", color: "#999" }}>
+            Published: December 29, 2024
+          </p>
+        </li>
+
+        <li style={{ marginBottom: "1rem" }}>
+          <a
             href="/blog/crafting-spirit-riddles-training-methodology/"
             style={{
               textDecoration: "none",
