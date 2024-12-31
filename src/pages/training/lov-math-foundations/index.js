@@ -286,6 +286,158 @@ const MathList = () => (
       </ul>
     </section>
 
+
+
+    {/* Heaps in Graph Theory */}
+    <section>
+      <h2
+        style={{
+          fontSize: "2rem",
+          color: "#111",
+          marginBottom: "1rem",
+          fontWeight: "bold",
+        }}
+      >
+        Heaps in Graph Theory
+      </h2>
+      <p
+        style={{
+          fontSize: "1.1rem",
+          lineHeight: "1.8",
+          color: "#555",
+          marginBottom: "1rem",
+        }}
+      >
+        In graph theory and programming, heaps are powerful data structures used to optimize algorithms, especially those involving priority queues, shortest paths, or minimum spanning trees. Below is an overview of heaps commonly used in graph theory and their specific applications.
+      </p>
+
+      <table
+        style={{
+          width: "100%",
+          borderCollapse: "collapse",
+          marginBottom: "2rem",
+          fontSize: "1rem",
+        }}
+      >
+        <thead
+          style={{
+            backgroundColor: "#f0f0f0",
+            textAlign: "left",
+          }}
+        >
+          <tr>
+            <th style={{ padding: "0.5rem", border: "1px solid #ddd" }}>Heap Type</th>
+            <th style={{ padding: "0.5rem", border: "1px solid #ddd" }}>Description</th>
+            <th style={{ padding: "0.5rem", border: "1px solid #ddd" }}>Applications</th>
+            <th style={{ padding: "0.5rem", border: "1px solid #ddd" }}>Strengths</th>
+          </tr>
+        </thead>
+        <tbody>
+          {[
+            {
+              type: "Binary Heap",
+              description: "A binary tree that satisfies the heap property (min-heap or max-heap).",
+              applications: "Dijkstra’s and Prim’s algorithms for priority queues.",
+              strengths: "Simple and efficient for most use cases.",
+            },
+            {
+              type: "Fibonacci Heap",
+              description:
+                "A collection of trees with a more relaxed structure, allowing faster decrease-key operations.",
+              applications:
+                "Efficient for Dijkstra’s and Prim’s algorithms in dense graphs.",
+              strengths:
+                "Theoretical efficiency for decrease-key operations, though complex to implement.",
+            },
+            {
+              type: "Pairing Heap",
+              description:
+                "A multi-way tree with comparable performance to Fibonacci heaps but easier to implement.",
+              applications:
+                "Prim’s algorithm and shortest path algorithms with frequent merges.",
+              strengths: "Practical and efficient for decrease-key-heavy operations.",
+            },
+            {
+              type: "d-ary Heap",
+              description:
+                "A generalization of binary heaps with \( d \) children per node.",
+              applications:
+                "Dijkstra’s algorithm with tunable \( d \) for dense graphs.",
+              strengths: "Reduces tree height, leading to fewer comparisons.",
+            },
+            {
+              type: "Binomial Heap",
+              description:
+                "A collection of binomial trees supporting efficient merging.",
+              applications:
+                "Minimum spanning tree algorithms and graph clustering.",
+              strengths: "Efficient merge operations for dynamic graph problems.",
+            },
+            {
+              type: "Skew Heap",
+              description: "A self-adjusting binary heap optimized for merging.",
+              applications: "Prim’s algorithm for frequent priority queue merging.",
+              strengths: "Simpler implementation with good practical performance.",
+            },
+            {
+              type: "Leftist Heap",
+              description:
+                "A binary tree optimized to ensure the shortest path to a leaf is always on the right.",
+              applications: "Dynamic MST algorithms with frequent merges.",
+              strengths: "Highly efficient for merge-heavy graph algorithms.",
+            },
+            {
+              type: "Weak Heap",
+              description:
+                "A relaxed version of binary heaps with a weaker heap property.",
+              applications: "Sorting edges in Kruskal’s algorithm.",
+              strengths: "Optimal sorting for edge-weight operations.",
+            },
+          ].map((heap, index) => (
+            <tr key={index}>
+              <td style={{ padding: "0.5rem", border: "1px solid #ddd" }}>
+                {heap.type}
+              </td>
+              <td style={{ padding: "0.5rem", border: "1px solid #ddd" }}>
+                {heap.description}
+              </td>
+              <td style={{ padding: "0.5rem", border: "1px solid #ddd" }}>
+                {heap.applications}
+              </td>
+              <td style={{ padding: "0.5rem", border: "1px solid #ddd" }}>
+                {heap.strengths}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+
+      <p
+        style={{
+          fontSize: "1.1rem",
+          lineHeight: "1.8",
+          color: "#555",
+          marginBottom: "1rem",
+        }}
+      >
+        Memorization Tip:
+        <ul>
+          <li>
+            <strong><em>Shortest Path Algorithms</em></strong>: Use <strong>Binary</strong>, <strong>Fibonacci</strong>, or <strong>d-ary heaps</strong>.
+          </li>
+          <li>
+            <strong><em>MST (Prim/Kruskal)</em></strong>: Use <strong>Fibonacci</strong>, <strong>Pairing</strong>, <strong>Skew</strong>, or <strong>Leftist heaps</strong>.
+          </li>
+          <li>
+            <strong><em>Dynamic Graph Problems</em></strong>: Favor heaps with efficient merging like <strong>Binomial</strong> or <strong>Leftist heaps</strong>.
+          </li>
+        </ul>
+      </p>
+      <br />
+    </section>
+
+
+
     {/* Graph Theory Video Section */}
     <section className="learning-graph-theory">
       <h2 className="section-title">
@@ -339,7 +491,7 @@ const MathList = () => (
         Ready to dive in? Watch the video, take notes, and share your insights. This is our collective journey into the world of graph theory and beyond!
       </p>
     </footer>
-  </main>
+  </main >
 );
 
 export default MathList;
