@@ -187,6 +187,25 @@ const IndexPage = () => (
       >
         <li style={{ marginBottom: "1rem" }}>
           <a
+            href="/blog/the-spirit-riddle-sitemap-product-and-philosophy/"
+            style={{
+              textDecoration: "none",
+              color: "#007acc",
+              fontWeight: "bold",
+            }}
+          >
+            The Spirit Riddle Sitemap Redefines Navigation with Innovation and Purpose
+          </a>
+          <p style={{ margin: 0, fontSize: "0.9rem", color: "#555" }}>
+            Explore how Spirit-Riddle.com transforms a simple sitemap into a dynamic, AI-driven product for organizing and evolving content relationships.
+          </p>
+          <p style={{ margin: 0, fontSize: "0.8rem", color: "#999" }}>
+            Published: January 03, 2024
+          </p>
+        </li>
+
+        <li style={{ marginBottom: "1rem" }}>
+          <a
             href="/blog/how-to-become-successful-in-tech-and-life/"
             style={{
               textDecoration: "none",
