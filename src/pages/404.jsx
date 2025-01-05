@@ -10,7 +10,6 @@ const NotFoundPage = () => (
     height: "100vh",
     fontFamily: "'Courier New', Courier, monospace",
     textAlign: "center",
-    color: "#333",
     padding: "1rem",
   }}>
     <h1 style={{ fontSize: "3rem", marginBottom: "1rem" }}>404: Page Not Found</h1>
@@ -19,7 +18,6 @@ const NotFoundPage = () => (
     </p>
     <Link to="/" style={{
       textDecoration: "none",
-      color: "#007acc",
       fontWeight: "bold",
       fontSize: "1.1rem",
       border: "2px solid #007acc",

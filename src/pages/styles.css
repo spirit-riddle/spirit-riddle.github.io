@@ -1,5 +1,16 @@
+/* styles.css */
 body {
-  background-color: #f4f4f4;
   margin: 0;
   padding: 0;
+  transition: background-color 0.3s ease; /* Smooth transition for theme changes */
+}
+
+[data-theme="light"] body {
+  background-color: #ffffff;
+  color: #000000; /* Default text color */
+}
+
+[data-theme="dark"] body {
+  background-color: #121212;
+  color: #ffffff; /* Default text color */
 }

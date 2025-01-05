@@ -8,8 +8,6 @@ const IndexPage = () => (
       style={{
         padding: "3rem 2rem",
         fontFamily: "'Courier New', Courier, monospace",
-        backgroundColor: "#f4f4f4",
-        color: "#333",
         maxWidth: "900px",
         margin: "0 auto",
         borderRadius: "8px",
@@ -22,7 +20,6 @@ const IndexPage = () => (
             textDecoration: "none",
             fontSize: "2rem",
             fontWeight: "bold",
-            color: "#333",
             fontFamily: "'Courier New', Courier, monospace",
           }}
         >
@@ -31,10 +28,10 @@ const IndexPage = () => (
         <h1 style={{ fontSize: "2.5rem", margin: "0", fontWeight: "normal" }}>
           Welcome to Spirit Riddle
         </h1>
+        {/* <ThemeToggle /> */}
         <p
           style={{
             fontSize: "1.1rem",
-            color: "#555",
             lineHeight: "1.6",
             fontStyle: "italic",
           }}
@@ -50,7 +47,6 @@ const IndexPage = () => (
         <h2
           style={{
             fontSize: "2rem",
-            color: "#111",
             marginBottom: "1rem",
             fontWeight: "bold",
           }}
@@ -71,13 +67,12 @@ const IndexPage = () => (
               href="/training/lov-math-foundations/"
               style={{
                 textDecoration: "none",
-                color: "#007acc",
                 fontWeight: "bold",
               }}
             >
               LOV Math Foundations
             </a>
-            <p style={{ margin: 0, fontSize: "0.9rem", color: "#555" }}>
+            <p style={{ margin: 0, fontSize: "0.9rem" }}>
               Master the essential math concepts behind modern systems, from graph theory to linear algebra. This foundational course bridges software development skills with advanced mathematical principles, providing the tools to tackle complex problem-solving with confidence.
             </p>
           </li>
@@ -89,7 +84,6 @@ const IndexPage = () => (
       <h2
         style={{
           fontSize: "2rem",
-          color: "#111",
           marginBottom: "1rem",
           fontWeight: "bold",
         }}
@@ -127,7 +121,6 @@ const IndexPage = () => (
             rel="noopener noreferrer"
             style={{
               textDecoration: "none",
-              color: "#007acc",
               fontWeight: "bold",
             }}
           >
@@ -141,7 +134,6 @@ const IndexPage = () => (
             rel="noopener noreferrer"
             style={{
               textDecoration: "none",
-              color: "#007acc",
               fontWeight: "bold",
             }}
           >
@@ -155,7 +147,6 @@ const IndexPage = () => (
             rel="noopener noreferrer"
             style={{
               textDecoration: "none",
-              color: "#007acc",
               fontWeight: "bold",
             }}
           >
@@ -169,7 +160,6 @@ const IndexPage = () => (
       <h2
         style={{
           fontSize: "2rem",
-          color: "#111",
           marginBottom: "1rem",
           fontWeight: "bold",
         }}
@@ -190,16 +180,15 @@ const IndexPage = () => (
             href="/blog/the-spirit-riddle-sitemap-product-and-philosophy/"
             style={{
               textDecoration: "none",
-              color: "#007acc",
               fontWeight: "bold",
             }}
           >
             The Spirit Riddle Sitemap Redefines Navigation with Innovation and Purpose
           </a>
-          <p style={{ margin: 0, fontSize: "0.9rem", color: "#555" }}>
+          <p style={{ margin: 0, fontSize: "0.9rem" }}>
             Explore how Spirit-Riddle.com transforms a simple sitemap into a dynamic, AI-driven product for organizing and evolving content relationships.
           </p>
-          <p style={{ margin: 0, fontSize: "0.8rem", color: "#999" }}>
+          <p style={{ margin: 0, fontSize: "0.8rem" }}>
             Published: January 03, 2024
           </p>
         </li>
@@ -209,16 +198,15 @@ const IndexPage = () => (
             href="/blog/how-to-become-successful-in-tech-and-life/"
             style={{
               textDecoration: "none",
-              color: "#007acc",
               fontWeight: "bold",
             }}
           >
             How to Become Successful in Tech and Life
           </a>
-          <p style={{ margin: 0, fontSize: "0.9rem", color: "#555" }}>
+          <p style={{ margin: 0, fontSize: "0.9rem" }}>
             Explore actionable insights and strategies for thriving in the tech industry and beyond. Learn how to start your journey toward success, no matter where you are today.
           </p>
-          <p style={{ margin: 0, fontSize: "0.8rem", color: "#999" }}>
+          <p style={{ margin: 0, fontSize: "0.8rem" }}>
             Published: December 29, 2024
           </p>
         </li>
@@ -228,16 +216,15 @@ const IndexPage = () => (
             href="/blog/crafting-spirit-riddles-training-methodology/"
             style={{
               textDecoration: "none",
-              color: "#007acc",
               fontWeight: "bold",
             }}
           >
             Crafting Spirit Riddle's Training Methodology
           </a>
-          <p style={{ margin: 0, fontSize: "0.9rem", color: "#555" }}>
+          <p style={{ margin: 0, fontSize: "0.9rem" }}>
             Explore the methodology behind Spirit Riddle's standardized training courses, designed for consistency and clarity in learning.
           </p>
-          <p style={{ margin: 0, fontSize: "0.8rem", color: "#999" }}>
+          <p style={{ margin: 0, fontSize: "0.8rem" }}>
             Published: December 9, 2024
           </p>
         </li>
@@ -247,17 +234,16 @@ const IndexPage = () => (
             href="/blog/memory-algorithmic-cognitive-enhancer/"
             style={{
               textDecoration: "none",
-              color: "#007acc",
               fontWeight: "bold",
             }}
           >
             Algorithmic Cognitive Enhancer
           </a>
-          <p style={{ margin: 0, fontSize: "0.9rem", color: "#555" }}>
+          <p style={{ margin: 0, fontSize: "0.9rem" }}>
             Explore how rolling your voice through musical notes can improve
             memory and focus.
           </p>
-          <p style={{ margin: 0, fontSize: "0.8rem", color: "#999" }}>
+          <p style={{ margin: 0, fontSize: "0.8rem" }}>
             Published: December 2, 2024
           </p>
         </li>
@@ -266,16 +252,15 @@ const IndexPage = () => (
             href="/blog/universal-service-adapter-model-lov/"
             style={{
               textDecoration: "none",
-              color: "#007acc",
               fontWeight: "bold",
             }}
           >
             Universal Service Adapter (LOV)
           </a>
-          <p style={{ margin: 0, fontSize: "0.9rem", color: "#555" }}>
+          <p style={{ margin: 0, fontSize: "0.9rem" }}>
             Discover how LOV simplifies complex integrations and empowers users.
           </p>
-          <p style={{ margin: 0, fontSize: "0.8rem", color: "#999" }}>
+          <p style={{ margin: 0, fontSize: "0.8rem" }}>
             Published: November 29, 2024
           </p>
         </li>
@@ -286,14 +271,12 @@ const IndexPage = () => (
           marginTop: "3rem",
           textAlign: "center",
           fontSize: "0.9rem",
-          color: "#888",
         }}
       >
         <p>© {new Date().getFullYear()} Spirit Riddle. All rights reserved.</p>
         <p
           style={{
             fontSize: "0.8rem",
-            color: "#aaa",
           }}
         >
           Exciting updates are on the way! This site is under active construction to bring you even more tools, training, and resources—be sure to check back soon for the latest improvements.

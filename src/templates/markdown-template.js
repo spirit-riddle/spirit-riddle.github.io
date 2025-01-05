@@ -1,37 +1,40 @@
 import React from "react";
 import { graphql } from "gatsby";
+import BlogHeader from "../components/FrontSite/BlogHeader";
+import BlogFooter from "../components/FrontSite/BlogFooter";
 import "../pages/styles.css";
-import Header from "../pages/blog/components/Header";
-import Footer from "../pages/blog/components/Footer";
+import EmptyLayout from "../components/EmptyLayout/EmptyLayout";
 
 const MarkdownTemplate = ({ data }) => {
   const post = data.markdownRemark;
 
   return (
-    <main
-      style={{
-        padding: "3rem 2rem",
-        fontFamily: "'Courier New', Courier, monospace",
-        backgroundColor: "#f4f4f4",
-        color: "#333",
-        maxWidth: "900px",
-        margin: "0 auto",
-        borderRadius: "8px",
-      }}
-    >
-      <Header
-        title={post.frontmatter.title}
-        subheader="Dive into this topic as part of the Spirit Riddle training."
-      />
-      <article
+    <EmptyLayout>
+      <main
         style={{
-          fontSize: "1rem",
-          lineHeight: "1.8",
+          padding: "3rem 2rem",
+          fontFamily: "'Courier New', Courier, monospace",
+          maxWidth: "900px",
+          margin: "0 auto",
+          borderRadius: "8px",
         }}
-        dangerouslySetInnerHTML={{ __html: post.html }}
-      />
-      <Footer />
-    </main>
+      >
+        {post?.frontmatter?.title && (
+          <BlogHeader
+            showBlogTitle={false}
+            title={post.frontmatter.title}
+          />
+        )}
+        <article
+          style={{
+            fontSize: "1rem",
+            lineHeight: "1.8",
+          }}
+          dangerouslySetInnerHTML={{ __html: post.html }}
+        />
+        <BlogFooter />
+      </main>
+    </EmptyLayout>
   );
 };
 
