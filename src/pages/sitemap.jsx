@@ -27,8 +27,10 @@ const Sitemap = () => {
   };
 
   // Parse the "q" parameter from the URL
-  const urlParams = new URLSearchParams(window.location.search);
-  const initialQuery = urlParams.get("q") || "";
+  const isBrowser = typeof window !== "undefined";
+  const initialQuery = isBrowser
+    ? new URLSearchParams(window.location.search).get("q") || ""
+    : "";
 
   const [searchQuery, setSearchQuery] = useState(initialQuery);
 
