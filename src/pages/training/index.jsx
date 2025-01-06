@@ -6,10 +6,7 @@ const TrainingIndex = () => (
   <EmptyLayout>
     <main
       style={{
-        padding: "3rem 2rem",
         fontFamily: "'Courier New', Courier, monospace",
-        backgroundColor: "#f4f4f4",
-        color: "#333",
         maxWidth: "900px",
         margin: "0 auto",
         borderRadius: "8px",
@@ -22,7 +19,6 @@ const TrainingIndex = () => (
         <p
           style={{
             fontSize: "1.1rem",
-            color: "#555",
             lineHeight: "1.6",
             fontStyle: "italic",
           }}
@@ -53,7 +49,7 @@ const TrainingIndex = () => (
         >
           <li style={{ marginBottom: "1rem" }}>
             <a
-              href="/training/lov-math-foundations/"
+              href="/training/courses/lov-math-foundations/"
               style={{
                 textDecoration: "none",
                 fontWeight: "bold",

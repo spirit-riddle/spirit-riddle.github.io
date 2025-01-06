@@ -10,7 +10,6 @@ const DynamicSitemapBlog = () => {
 
       <main
         style={{
-          padding: "3rem 2rem",
           fontFamily: "'Courier New', Courier, monospace",
           maxWidth: "900px",
           margin: "0 auto",

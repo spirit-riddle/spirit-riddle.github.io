@@ -6,7 +6,6 @@ const IndexPage = () => (
   <EmptyLayout>
     <main
       style={{
-        padding: "3rem 2rem",
         fontFamily: "'Courier New', Courier, monospace",
         maxWidth: "900px",
         margin: "0 auto",
@@ -89,7 +88,7 @@ const IndexPage = () => (
         >
           <li style={{ marginBottom: "1rem" }}>
             <a
-              href="/training/lov-math-foundations/"
+              href="/training/courses/lov-math-foundations/"
               style={{
                 textDecoration: "none",
                 fontWeight: "bold",

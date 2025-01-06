@@ -14,7 +14,7 @@ const EmptyLayout = ({ children }) => (
         margin: "0 auto",
         borderRadius: "8px",
         "@media (max-width: 480px)": {
-          padding: "5px",
+          padding: "3px 15px",
         },
       }}
     >
