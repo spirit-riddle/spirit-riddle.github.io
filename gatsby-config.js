@@ -21,8 +21,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `training`,
-        path: `${__dirname}/src/pages/training`,
-        ignore: [`**/.*`], // Ignore files starting with a dot
+        path: `${__dirname}/src/pages/training/appendice/website/`, // Correct path for Markdown files
       },
     },
     {

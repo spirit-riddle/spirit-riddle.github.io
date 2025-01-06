@@ -42,6 +42,31 @@ const IndexPage = () => (
         </p>
       </header>
 
+      {/* Explore the Sitemap */}
+      <section>
+        <br />
+        <br />
+        <p
+          style={{
+            fontSize: "1rem",
+            lineHeight: "1.8",
+            marginBottom: "1.5rem",
+          }}
+        >
+          Discover everything Spirit Riddle has to offer in one place! Use our{" "}
+          <a
+            href="/sitemap"
+            style={{
+              textDecoration: "none",
+              fontWeight: "bold",
+            }}
+          >
+            Sitemap
+          </a>{" "}
+          to explore blogs, training pages, and resources.
+        </p>
+      </section>
+
       {/* Training Section */}
       <section>
         <h2

@@ -1,6 +1,6 @@
 import React from "react";
-import "../../styles.css";
-import EmptyLayout from "../../../components/EmptyLayout/EmptyLayout";
+import "../../../styles.css";
+import EmptyLayout from "../../../../components/EmptyLayout/EmptyLayout";
 
 const MathList = () => (
   <EmptyLayout>
@@ -152,44 +152,44 @@ const MathList = () => (
             {[
               {
                 title: "Graph Theory",
-                web: "/training/lov-math-foundations/website/Appendix_1_Graph_Theory",
-                standard: "/training/lov-math-foundations/pdf/Standard%20-%20Appendix%201%20Graph%20Theory.pdf",
+                web: "/training/appendice/website/Appendix_1_Graph_Theory",
+                standard: "/training/appendice/pdf/Standard%20-%20Appendix%201%20Graph%20Theory.pdf",
                 pro: "/pro",
               },
               {
                 title: "Algorithms And Models",
-                web: "/training/lov-math-foundations/website/Appendix_2_Algorithms_And_Models",
-                standard: "/training/lov-math-foundations/pdf/Standard%20-%20Appendix%202%20Algorithms%20And%20Models.pdf",
+                web: "/training/appendice/website/Appendix_2_Algorithms_And_Models",
+                standard: "/training/appendice/pdf/Standard%20-%20Appendix%202%20Algorithms%20And%20Models.pdf",
                 pro: "/pro",
               },
               {
                 title: "Linear Algebra",
-                web: "/training/lov-math-foundations/website/Appendix_3_Linear_Algebra",
-                standard: "/training/lov-math-foundations/pdf/Standard%20-%20Appendix%203%20Linear%20Algebra.pdf",
+                web: "/training/appendice/website/Appendix_3_Linear_Algebra",
+                standard: "/training/appendice/pdf/Standard%20-%20Appendix%203%20Linear%20Algebra.pdf",
                 pro: "/pro",
               },
               {
                 title: "Probability And Statistics",
-                web: "/training/lov-math-foundations/website/Appendix_4_Probability_And_Statistics",
-                standard: "/training/lov-math-foundations/pdf/Standard%20-%20Appendix%204%20Probability%20And%20Statistics.pdf",
+                web: "/training/appendice/website/Appendix_4_Probability_And_Statistics",
+                standard: "/training/appendice/pdf/Standard%20-%20Appendix%204%20Probability%20And%20Statistics.pdf",
                 pro: "/pro",
               },
               {
                 title: "Comprehensive Terminology",
-                web: "/training/lov-math-foundations/website/Appendix_5_Comprehensive_Terminology",
-                standard: "/training/lov-math-foundations/pdf/Standard%20-%20Appendix%205%20Comprehensive%20Terminology.pdf",
+                web: "/training/appendice/website/Appendix_5_Comprehensive_Terminology",
+                standard: "/training/appendice/pdf/Standard%20-%20Appendix%205%20Comprehensive%20Terminology.pdf",
                 pro: "/pro",
               },
               {
                 title: "Comprehensive Algorithms",
-                web: "/training/lov-math-foundations/website/Appendix_6_Comprehensive_Algorithms",
-                standard: "/training/lov-math-foundations/pdf/Standard%20-%20Appendix%206%20Comprehensive%20Algorithms.pdf",
+                web: "/training/appendice/website/Appendix_6_Comprehensive_Algorithms",
+                standard: "/training/appendice/pdf/Standard%20-%20Appendix%206%20Comprehensive%20Algorithms.pdf",
                 pro: "/pro",
               },
               {
                 title: "Rosetta Stone For Math And Code",
-                web: "/training/lov-math-foundations/website/Appendix_7_Rosetta_Stone_For_Math_And_Code",
-                standard: "/training/lov-math-foundations/pdf/Standard%20-%20Appendix%207%20Rosetta%20Stone%20For%20Math%20And%20Code.pdf",
+                web: "/training/appendice/website/Appendix_7_Rosetta_Stone_For_Math_And_Code",
+                standard: "/training/appendice/pdf/Standard%20-%20Appendix%207%20Rosetta%20Stone%20For%20Math%20And%20Code.pdf",
                 pro: "/pro",
               },
             ].map((appendix, index) => (
@@ -216,7 +216,7 @@ const MathList = () => (
               </td>
               <td style={{ padding: "0.5rem", border: "1px solid #ddd" }}></td>
               <td style={{ padding: "0.5rem", border: "1px solid #ddd" }}>
-                <a href="/training/lov-math-foundations/pdf/Standard%20-%20Appendices.zip">Download All Standard</a>
+                <a href="/training/appendice/pdf/Standard%20-%20Appendices.zip">Download All Standard</a>
               </td>
               <td style={{ padding: "0.5rem", border: "1px solid #ddd" }}>
                 <a href="/pro">Download All Pro</a>

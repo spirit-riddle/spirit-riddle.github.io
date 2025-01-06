@@ -3,7 +3,7 @@ const path = require(`path`);
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
-  // Query all markdown files
+  // Query all Markdown files
   const result = await graphql(`
     {
       allMarkdownRemark {
@@ -21,10 +21,16 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `);
 
-  // Create a page for each markdown file
+  // Check for query errors
+  if (result.errors) {
+    console.error(result.errors);
+    return;
+  }
+
+  // Create pages for each Markdown file
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
-      path: `/training/${node.fields.slug}`,
+      path: `/training/appendice/website/${node.fields.slug}`,
       component: path.resolve(`./src/templates/markdown-template.js`),
       context: {
         slug: node.fields.slug,
@@ -33,7 +39,6 @@ exports.createPages = async ({ graphql, actions }) => {
   });
 };
 
-// Add a slug field to markdown files
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
 
